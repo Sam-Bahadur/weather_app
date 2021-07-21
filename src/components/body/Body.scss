@@ -1,0 +1,42 @@
+.card {
+  width: 20rem;
+  height: 30rem;
+  margin: 5rem auto;
+  border-radius: 2rem;
+  background: linear-gradient(
+    30deg,
+    rgba(2, 0, 36, 1) 13%,
+    rgba(18, 18, 105, 1) 53%,
+    rgba(0, 212, 255, 1) 88%
+  );
+  animation: moving-bg 2s infinite;
+  @keyframes moving-bg {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      //   transform: translateX(-187%);
+    }
+  }
+  .text-input {
+    width: 12rem;
+    margin: 0rem auto;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    input {
+      width: 100%;
+      border-radius: 0.3rem;
+      display: inline;
+    }
+    button {
+      display: inline;
+    }
+  }
+  .data-display {
+    color: wheat;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
