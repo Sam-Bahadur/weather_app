@@ -25,10 +25,11 @@
     padding: 1rem 0;
     display: grid;
     grid-template-columns: 0.7fr 0.3fr;
-    input {
+    input[type="text"] {
       width: 100%;
       border-radius: 0.3rem;
       display: inline;
+      background-color: #d1d1d1;
     }
     button {
       display: inline;
@@ -38,5 +39,21 @@
     color: wheat;
     width: 80%;
     margin: 0 auto;
+    img {
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+    .current-temp {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .min-max {
+      margin: 1rem auto;
+      font-size: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+    }
   }
 }
